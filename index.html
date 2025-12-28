@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DT-CAPTION PRO | DicelionTechnique</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#000814" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700;900&family=Almarai:wght@400;700;800&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Baloo+Bhaijaan+2:wght@400;700;800&family=Bebas+Neue&family=Cairo:wght@400;700;900&family=Changa:wght@400;700;800&family=El+Messiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;700&family=Inter:wght@400;900&family=Jomhuria&family=Kufam:wght@400;700;900&family=Lateef&family=Lemonada:wght@400;700&family=Mada:wght@400;700&family=Markazi+Text:wght@400;700&family=Montserrat:wght@400;700;900&family=Noto+Sans+Arabic:wght@400;700;900&family=Oswald:wght@400;700&family=Playfair+Display:wght@400;900&family=Poppins:wght@400;700;900&family=Qahiri&family=Readex+Pro:wght@400;700&family=Reem+Kufi:wght@400;700;900&family=Roboto+Condensed:wght@400;700&family=Tajawal:wght@400;700;900&family=Vibur&family=Anton&family=Righteous&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --neon-blue: #0066ff;
+        --tech-bg: #00040a;
+      }
+      body {
+        font-family: 'Cairo', sans-serif;
+        background-color: var(--tech-bg);
+        color: #e2e8f0;
+        overflow-x: hidden;
+        background-image: 
+          radial-gradient(circle at 50% 50%, rgba(0, 102, 255, 0.08) 0%, transparent 70%),
+          linear-gradient(rgba(0, 102, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 102, 255, 0.05) 1px, transparent 1px);
+        background-size: 100% 100%, 50px 50px, 50px 50px;
+      }
+
+      @keyframes neon-pulse {
+        0%, 100% { box-shadow: 0 0 15px rgba(0, 102, 255, 0.2), inset 0 0 5px rgba(0, 102, 255, 0.1); border-color: rgba(0, 102, 255, 0.3); }
+        50% { box-shadow: 0 0 30px rgba(0, 102, 255, 0.5), inset 0 0 10px rgba(0, 102, 255, 0.2); border-color: rgba(0, 102, 255, 0.6); }
+      }
+
+      @keyframes tech-glow-play {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      .neon-box {
+        animation: neon-pulse 4s infinite ease-in-out;
+        transition: all 0.3s ease;
+        background: linear-gradient(-45deg, rgba(0, 8, 20, 0.9), rgba(0, 20, 50, 0.8), rgba(0, 8, 20, 0.9));
+        background-size: 400% 400%;
+        animation: tech-glow-play 10s infinite ease-in-out, neon-pulse 4s infinite ease-in-out;
+      }
+
+      .neon-box:hover {
+        box-shadow: 0 0 40px rgba(0, 102, 255, 0.6), inset 0 0 20px rgba(0, 102, 255, 0.3);
+        transform: translateY(-3px);
+      }
+
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: var(--tech-bg); }
+      ::-webkit-scrollbar-thumb { background: var(--neon-blue); border-radius: 10px; box-shadow: 0 0 10px var(--neon-blue); }
+
+      .animate-pop-elastic { animation: pop-elastic 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+      @keyframes pop-elastic { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

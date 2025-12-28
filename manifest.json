@@ -1,0 +1,16 @@
+
+{
+  "short_name": "DT-CAPTION",
+  "name": "DT-CAPTION PRO | DicelionTechnique",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/fluency/512/video-editing.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000814",
+  "background_color": "#000814"
+}
